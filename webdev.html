@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrian</title> 
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body> 
+  <header>
+    <a href="#" class="logo"><s>Adrian</s> </a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+      <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu();">About</a></li>
+      <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+      <li><a href="#work" onclick="toggleMenu();">MyWork</a></li>
+      <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      <li><a href="#contact" onclick="toggleMenu();">Request A Quote</a></li>
+    </ul> 
+  </header>
+  <section class= "banner" id ="home">
+    <div class="textBx">
+      <h2> Hello, Im <br><span> Adrian Omondi.</h2>
+      <h3>Im a Web Developer/Software Programmer.</h3>
+      <a href= "#about" class="btn">About Me</a>
+    </div>
+  </section>
+  <section class="about" id ="about">
+    <div class="heading">
+      <h2>About Me</h2>
+    </div>
+    <div class="content">
+      <div class="contenBx w50">
+        <h3>Im a Web/Software Developer</h3>
+        <p>I am an Innovative web developer with 1 year of experience in Web/Software development.I have web development skills using JavaScript, C++, C# and, python
+        languages and also familiar with frameworks like angular, react and laravel. I also currently working on improving my skills in working with API(fetch, RESTful etc.) to assist 
+        in integrating various services when working with websites and applications.<br><br>
+        I am a self-driven
+        individual open to learning new things and working in diverse software teams.</p>
+    </div>
+      <div class="w50">
+        <img src="adriano.jpg" class="img">
+    </div>
+    </div>
+
+  </section>
+  <section class="services" id="services">
+     <div class="heading white">
+      <h2>Services</h2>
+      <p></p>
+    </div>
+    <div class="content">
+      <div class="servicesBx">
+        <img src="icon1.png">
+        <h2>Web Design & Development</h2>
+        <p>Have a customized responsive website designed and developed for you with recent designs to fit your business.organization and brand needs etc</p>
+      </div>
+      <div class="servicesBx">
+        <img src="icon2.png">
+        <h2>Search Engine Optimization</h2>
+        <p>We Integrate keywords and other features to you website to allow people to find you easily and drive a lot of traffic to your website</p>
+      </div>
+      <div class="servicesBx">
+        <img src="icon3.png">
+        <h2>Maintenance of Existing website</h2>
+        <p>We update your current website to current standards.</p>
+      </div>
+    </div>
+  </section>
+  <section class ="work" id ="work">
+    <div class ="heading white2">
+      <h2>Recent Works</h2>
+      <div class="works">
+      <div class="servicesBx">
+        <img src="icon1.png">
+        <h2>A Soccer Stat Site</h2>
+        <p>I am currently working on a site to provide users with soccer stats that is:livescores,player info,football fixtures,predictions,standings.The site utilizes the RapidAPI</p>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class ="heading white">
+      <h2>Contact Me</h2>
+    </div>
+    <div class="content">
+      <div class="contactinfo">
+        <h3>Contact Info</h3>
+        <div class="contactinfoBx">
+          <div class="box">
+            <div class= "icon"></div>
+              <div class ="text">
+              <h3>Address</h3>
+
+              <p> 422-40107 Muhoroni
+              <br/>adrianomondih@gmail.com
+              <br/>+254 0770620032</p>
+              </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class = "formBx">
+    <form method="post" action="index.php">
+    <h3>Message Me</h3> 
+    <input type="text" name="name" placeholder="Full Name">
+    <input type="email" name="email" placeholder="Email">
+    <textarea name="message" placeholder="Your Message"></textarea>
+    <input id="submit" name="submit" type="submit" value="Send">
+    </form>
+  </div>
+</section>
+</div>
+  </section>
+  <script type="text/javascript">
+    window.addEventListener('scroll',function(){
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+    function toggleMenu(){
+      var menuToggle = document.querySelector('.toggle');
+      var menu = document.querySelector('.menu');
+      menuToggle.classList.toggle('active');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
+
+
